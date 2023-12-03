@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;600;700&display=swap');
+
+*{
+    box-sizing:border-box;
+    font-family: 'Comfortaa',cursive;
+    color: white;
+
+}   
+
+#home {
+    display:flex;
+    top:0px;
+    justify-content: center;
+    align-items: center;
+
+}
+body{
+    background-image:url("lorebg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -100;
+}
+.overlay{
+    mix-blend-mode: overlay;
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    background: rgba(255,255,255,0,8)
+}
+section{ 
+    min-height:100vh;
+
+}
+
+.text-bub {
+    background: rgba(240, 248, 255,0.9);
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px;
+    padding:60px;
+    width: 800px;
+    box-shadow: 0px 0px 30px 1px #008b8b;
+   
+}
+
+.text-bub h1{
+    padding-left:15px;
+    color: black;
+}
+
+.showcase header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    height:35px;
+    width: 100%;
+    padding: 47px 70px;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.menu ul{
+    position: relative;
+    right: 0;
+    list-style:none;
+    text-decoration: none;
+    display: flex;
+
+    
+}
+
+.menu ul li a{
+    text-decoration: none;
+    font-size: 23px;margin-left: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+
+.menu ul li a:hover{
+    color: rgb(125, 102, 225);
+    text-shadow: 0px 0px 40px aliceblue;
+    letter-spacing: 2px;
+    animation: menuglow 1s ease-in-out infinite alternate;
+    font-weight: bolder;
+    
+}
+
+
+.active-page{
+    /* text-shadow: 10px 0px 10px cyan; */
+    animation: menuglow 1s ease-in-out infinite alternate;
+   
+}
+
+.logo{
+    animation: animate 1s ease-in-out infinite alternate;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.social{
+    position: fixed;
+    bottom: 9px;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left:60px;
+
+}
+
+.social li {
+    list-style: none;
+}
+
+.social li a{
+    display: inline-block ;
+    margin-right: 50px;
+    transition: 0.3s ;
+    transition-timing-function: ease-out;
+    transform: scale(0.8);
+}
+
+.social li a:hover{
+    transform: scale(1) translateY(-10px);
+
+}
+
+
+#lore-card{
+    background:rgba(240, 248, 255,0.6);
+    border-radius: 30px;
+    margin: 200px;
+}
+
+
+#lore-card *{
+    color:white;
+}
+
+.jett-text1{
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.jett-text1 h1{
+    margin: 50px;
+    padding:60px;
+    padding-top:40px;
+    width: 800px;
+    font-weight: bold;
+    background-color: #68BBE3;border-radius: 30px;
+}
+
+.jett-text2{
+    display:flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.jett-text2 h1{
+    margin: 50px;
+    padding:60px;
+    padding-top:40px;
+    width: 800px;
+    font-weight: bold;
+    background-color: #68BBE3;border-radius: 30px;
+}
+.kayo-text1, .kayo-text2{
+    display:flex;
+    justify-content: center;
+    padding-right:100px;
+}
+
+.kayo-text1 h1, .kayo-text2 h1{
+    margin: 60px;
+    padding:60px;
+    padding-top:40px;
+    width: 800px;
+    font-weight: bold;
+    background-color: #7C86A6;border-radius: 30px;
+}
+
+.sage-text1 {
+    display:flex;
+    justify-content: center;
+    padding-right:100px;
+}
+
+.sage-text1 img{
+    margin-left: 100px;
+}
+
+.sage-text1 h1{
+    margin: 50px;
+    padding:60px;
+    padding-top:40px;
+    width: 800px;
+    font-weight: bold;
+    background-color: rgba(144,238,144);border-radius: 30px;
+}
+
+.pheonix-text1 img{
+    margin-left:100px;
+}
+
+.pheonix-text1 {
+    display:flex;
+    justify-content: center;
+    padding-right:200px;
+}
+
+.pheonix-text1 h1{
+    margin: 50px;
+    padding:60px;
+    padding-top:40px;
+    width: 800px;
+    font-weight: bold;
+    background-color: rgba(255,127,127);border-radius: 30px;
+}
+
+.jett-text3{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.jett-text3 h1{
+    margin: 70px;
+    padding-top:40px;
+    width: 800px;
+    font-weight: bold;
+    background-color: #68BBE3;border-radius: 30px;
+}
+
+#lore-card a{
+    min-height: 50px;
+    position:relative;
+    margin-left:auto;
+    margin-right:auto;
+    bottom: 30px;
+    width: 200px;
+    display: block;
+    margin-top: 30px;
+    font-size: 20px;
+    /* background: aliceblue; */
+    padding: 20px 30px;
+    color:white;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    
+    background: linear-gradient(90deg, rgb(125, 58, 202) 0%, rgba(140,69,220,1) 100%);
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px rgba(140,69,220,.64);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  
+}
+
+#lore-card a::before {
+    content: '';
+      border-radius: 1000px;
+      border: 6px solid #4f3d8f;
+      box-shadow: 0 0 60px rgba(140,69,220,.64);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: all .3s ease-in-out 0s;
+    }
+
+
+
+    #lore-card a:hover {
+        color: aliceblue;
+        transform: translateY(-6px);
+      }
+
+      #lore-card a::after {
+        content: '';
+        border-radius: 100%;
+        border: 6px solid #2a108a;
+        position: absolute;
+        z-index: -3;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: ring 1.5s infinite;
+      }
+      
+      #lore-card a:hover::after {
+        animation: none;
+        display: none;
+      }
+      
+/* cool stuff  */
+
+@keyframes ring {
+    0% {
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+    }
+    100% {
+      width: 250px;
+      height: 200px;
+      opacity: 0;
+    }
+  }
+@keyframes animate{
+    from{
+        text-shadow: 0 0 0px #c8362e;
+    }
+    to{
+        text-shadow: 0 0 50px #c8362e,
+        0 0 20px #c8362e;
+    }
+}
+
+
+@keyframes menuglow{
+    from{
+        text-shadow: 0 0 10px cyan;
+    }
+    to{
+        text-shadow: 0 0 60px cyan,0 0 20px cyan;
+    }
+}
+
+
+
+
+@media screen and (max-width: 768px){
+    .showcase,
+    .showcase header{
+        padding: 40px;
+    }
+    .text h1{
+        font-size: 5em;
+    }
+    .text p{
+        font-size: -1em;
+    }
+    .text{
+        margin-left: 10%;
+    }
+    
+}
+
+@media (max-width: 900px){
+    section h1{
+        font-size:40px;
+    }
+    section .cards{
+        flex-direction: column;
+    }
+
+    
+}
+
+
